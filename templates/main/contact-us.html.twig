@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}MustDoDiving.com | {{ page_name }} {% endblock %}
+
+{% block body %}
+    <div class="container">
+
+        <div class="content-area contact-us">
+
+            {% for message in app.flashes('info') %}
+                <div class="alert alert-success text-center">
+                    {{ message }}
+                </div>
+            {% endfor %}
+            <h3>{{ page_name }}</h3>
+            {{ form_start(contact_form) }}
+            {{ form_widget(contact_form) }}
+            {{ form_end(contact_form) }}
+        </div>
+    </div>
+{% endblock %}

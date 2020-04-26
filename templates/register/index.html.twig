@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}MustDoDiving.com | Register User{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <div class="content-area contact-us">
+    <h3>{{ page_name }}</h3>
+    {{ form_start(register_form) }}
+    {{ form_widget(register_form) }}
+    {{ form_end(register_form) }}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{# templates/emails/registration.html.twig #}
+
+<h4>Hi John!</h4>
+
+<p>{{ message }}</p>
+
+<p>{{ name }}</p>
+<p>{{ phone }}</p>
+<p>Reach me at: {{ email }}</p>
+
+<p>Thanks!</p>
+
+{# Makes an absolute URL to the /images/logo.png file #}
+<img src="{{ absolute_url(asset('images/watermark.png')) }}">
